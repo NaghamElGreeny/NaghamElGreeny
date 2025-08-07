@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=naghamelgreeny&label=Profile%20views&color=0e75b6&style=flat" alt="naghamelgreeny" /> </p>
 
 <div style="display: flex; align-items: center; gap: 20px;">
-<img src="https://github.com/NaghamElGreeny/NaghamElGreeny/blob/main/assets/Girl-on-Computer.gif?raw=true" width="250" alt="Working GIF" />
+<img src="https://github.com/NaghamElGreeny/NaghamElGreeny/blob/main/assets/girl-on-computer-with-idea.gif?raw=true" width="250" alt="Working GIF" />
 
 <div>
 
