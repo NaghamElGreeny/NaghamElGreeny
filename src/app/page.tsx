@@ -1,7 +1,10 @@
-export default function Home() {
+const HomePage = () => {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <div className="Hi text-green-500 font-extrabold">Hi there</div>
-    </div>
+    <main>
+      <h1>مرحبًا بك في موقعي الشخصي</h1>
+      <p>ده أول مشروع Next.js لي باستخدام App Router.</p>
+    </main>
   );
-}
+};
+
+export default HomePage;
