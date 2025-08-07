@@ -1,5 +1,3 @@
-<!-- ## Hi there 👋 -->
-
 <!--
 **NaghamElGreeny/NaghamElGreeny** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -13,31 +11,24 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
-- 🔭 I’m currently working on [My Portfolio](https://github.com/NaghamElGreeny/NaghamElGreeny/)
-
-- 👨‍💻 All of my projects are available at [https://github.com/NaghamElGreeny/](https://github.com/NaghamElGreeny/)
-
-- 📫 How to reach me **naghamelgreeny@gmail.com**
 -->
 <h1 align="center">Hi 👋, I'm Nagham (aka Naghoma)👩🏻‍💻💚</h1>
 <h3 align="center">A passionate Front-End Developer from Egypt 🇪🇬</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=naghamelgreeny&label=Profile%20views&color=0e75b6&style=flat" alt="naghamelgreeny" /> </p>
 
-<table>
-  <tr>
-    <td>
-      <img src="https://github.com/NaghamElGreeny/NaghamElGreeny/blob/main/assets/animations/girl-on-computer-with Idea.gif" width="250" alt="Working GIF" />
-    </td>
-    <td>
-      <ul>
-        <li>🔭 I’m currently working on <a href="https://github.com/NaghamElGreeny/NaghamElGreeny/">My Portfolio</a></li>
-        <li>👨‍💻 All of my projects are available at <a href="https://github.com/NaghamElGreeny/">GitHub</a></li>
-        <li>📫 How to reach me: <strong>naghamelgreeny@gmail.com</strong></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<div style="display: flex; align-items: center; gap: 20px;">
+<img src="https://github.com/NaghamElGreeny/NaghamElGreeny/blob/main/assets/Girl-on-Computer.gif?raw=true" width="250" alt="Working GIF" />
+
+<div>
+
+- 🔭 I’m currently working on [My Portfolio](https://github.com/NaghamElGreeny/NaghamElGreeny/)
+
+- 👨‍💻 All of my projects are available at [https://github.com/NaghamElGreeny/](https://github.com/NaghamElGreeny/)
+
+- 📫 How to reach me **naghamelgreeny@gmail.com**
+</div>
+</div>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
