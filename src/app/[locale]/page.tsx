@@ -1,15 +1,23 @@
-'use client';
+import Test from '@/components/Test';
+import ToggleLang from '@/components/ui/ToggleLang';
+import { getTranslations } from 'next-intl/server';
 
-import { useTranslation } from 'react-i18next';
-import '@/lib/i18n/config';
+export default async function Page() {
+  const t = await getTranslations('Navbar');
 
-export default function HomePage() {
-  const { t } = useTranslation();
-  // عايز يديديكت اللغه من الهيدر
   return (
-    <main>
-      <h1>{t('welcome')}</h1>
-      <p>{t('language')}</p>
+    <main className="flex w-full h-full flex-col  p-10 bg-white">
+      <div className="bg-red-300 p-3 text-center text-xl">
+        Test localization in Server
+        <br />
+        {t('home')}
+        <br />
+        {t('about')}
+        <br />
+        {t('skills')}
+      </div>
+      <Test />
+      <ToggleLang />
     </main>
   );
 }

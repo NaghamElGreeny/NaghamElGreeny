@@ -1,0 +1,15 @@
+{
+  "lang": "ltr",
+  "locale": {
+    "ar": "En",
+    "en": "ع"
+  },
+  "welcome": "Welcome to my personal website",
+  "Navbar": {
+    "home": "home",
+    "about": "about",
+    "services": "services",
+    "skills": "skills",
+    "profile": "profile"
+  }
+}
