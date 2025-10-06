@@ -12,7 +12,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<h1 align="center">Hi 👋, I'm Nagham (aka Naghoma)👩🏻‍💻💚</h1>
+<h1 align="center">Hi 👋, I'm Nagham 👩🏻‍💻💚</h1>
 <h3 align="center">A passionate Front-End Developer from Egypt 🇪🇬</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=naghamelgreeny&label=Profile%20views&color=0e75b6&style=flat" alt="naghamelgreeny" /> </p>
