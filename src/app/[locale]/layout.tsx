@@ -5,6 +5,8 @@ import { cookies } from 'next/headers';
 import { getMessages } from 'next-intl/server';
 import { Metadata } from 'next';
 import '../globals.css';
+import { ReactNode } from 'react';
+import Navbar from '@/components/layout/Navbar';
 
 export const metadata: Metadata = {
   title: 'Nagham ElGreeny',
@@ -13,14 +15,12 @@ export const metadata: Metadata = {
     icon: '/assets/icon.png',
   },
 };
+interface RootLayoutProps {
+  children: ReactNode;
+  params: Promise<{ locale: string }>;
+}
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
+export default async function RootLayout({ children, params }: RootLayoutProps) {
   const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) {
@@ -34,9 +34,11 @@ export default async function LocaleLayout({
 
   return (
     <html className={themeMode} lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-      <head>{/* <link rel="icon" href={webSettings.website_fav_icon || "/logo.png"} /> */}</head>
       <body className="flex flex-col">
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
