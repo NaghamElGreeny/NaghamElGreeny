@@ -1,9 +1,6 @@
 'use client';
-import React, { PropsWithChildren } from 'react';
-
-import Link from 'next/link';
-import { useLocale } from 'next-intl';
-import { usePathname } from 'next/navigation';
+import React, { PropsWithChildren, useEffect, useState } from 'react';
+import { Link, usePathname } from '@/i18n/routing';
 import clsx from 'clsx';
 
 type props = {
@@ -12,15 +9,20 @@ type props = {
 };
 
 export default function LocalePath({ href, className = '', children }: PropsWithChildren<props>) {
-  const locale = useLocale();
   const pathname = usePathname();
-  const localizedHref = locale === 'ar' ? `/${locale}${href}` : href;
-  const isActive = pathname === localizedHref;
+  const [isActive, setIsActive] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    setIsActive(pathname === href);
+  }, [pathname, href]);
+
   return (
     <Link
-      href={localizedHref}
+      href={href}
       className={clsx(className, {
-        'active-link': isActive,
+        'active-link': mounted && isActive,
       })}
     >
       {children}

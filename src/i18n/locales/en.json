@@ -1,15 +1,101 @@
 {
   "lang": "ltr",
+  "developer": "Nagham Elgreeny",
   "locale": {
     "ar": "En",
     "en": "ع"
   },
   "welcome": "Welcome to my personal website",
   "Navbar": {
+    "name": "Nagham Elgreeny",
     "home": "home",
     "about": "about",
+    "projects": "projects",
+    "contact": "contact",
     "services": "services",
     "skills": "skills",
     "profile": "profile"
+  },
+  "Hero": {
+    "title": "Front-End Developer",
+    "subtitle": "Creating clean, modern, and user-focused web interfaces",
+    "tagline": "Transforming ideas into interactive designs",
+    "ctaProjects": "View Projects",
+    "ctaContact": "Get In Touch",
+    "scrollDown": "Scroll to explore"
+  },
+  "About": {
+    "title": "About Me",
+    "subtitle": "My Story",
+    "intro": "I'm Nagham ElGreeny, a Front-End Developer from Egypt, born on March 30, 2001. I'm passionate about creating clean, modern, and user-focused web interfaces. My journey in development started from my love for logical thinking and problem-solving, and it grew into a strong drive to build functional and visually appealing digital experiences.",
+    "passion": "I enjoy transforming ideas into interactive designs, organizing project structures, and writing clean, reusable, and maintainable code.",
+    "whatIDo": "What I Do",
+    "whatIDoDesc": "I specialize in building responsive, scalable, and production-ready applications using modern technologies and best practices.",
+    "strengths": "My Strengths",
+    "strengthsList": {
+      "logical": "Strong logical & analytical thinking",
+      "learner": "Fast learner & quick problem-solver",
+      "organized": "Organized with sharp attention to detail",
+      "communicator": "Good communicator, social, and confident",
+      "independent": "Able to take decisions independently",
+      "hungry": "Always hungry to learn and grow",
+      "explainer": "Comfortable explaining technical concepts clearly"
+    },
+    "background": "Professional Background",
+    "education": "Bachelor's in Multimedia – Assiut University, 2023",
+    "acm": "ACM Trainee (Problem solving, C++)",
+    "experience": "Former roles: Search Ads Evaluator (Appen), Medical Data Entry, Property Sales",
+    "current": "Currently focused fully on Front-End Development",
+    "personality": "Personal Side",
+    "personalityDesc": "I'm an ENTP with a creative, energetic personality. I love art, sketching, walking, dancing to warm up, trying new experiences, and having deep meaningful conversations. I enjoy both calm and lively environments and get inspiration from moving, thinking, and exploring.",
+    "goals": "Current Career Goals",
+    "goalsList": {
+      "portfolio": "Build a strong and modern 2025 portfolio",
+      "position": "Get an entry-level Front-End position in Tanta or Mansoura",
+      "skills": "Strengthen advanced skills in Next.js, TypeScript, clean architecture, and state management",
+      "work": "Produce work that reflects my ambition and professionalism"
+    }
+  },
+  "Skills": {
+    "title": "Tech Stack",
+    "subtitle": "Technologies I work with",
+    "frontend": "Frontend",
+    "state": "State Management",
+    "styling": "Styling",
+    "tools": "Tools & Libraries"
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "Featured Work",
+    "viewAll": "View All Projects",
+    "liveDemo": "Live Demo",
+    "viewCode": "View Code",
+    "techStack": "Tech Stack"
+  },
+  "Contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!",
+    "responseTime": "Response Time",
+    "responseTimeDesc": "I typically respond within 24-48 hours",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "directLinks": "Or reach me directly",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "Footer": {
+    "rights": "All rights reserved",
+    "terms": "Terms",
+    "privacy": "Privacy"
   }
 }

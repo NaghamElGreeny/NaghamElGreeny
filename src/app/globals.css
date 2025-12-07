@@ -1,33 +1,57 @@
 @import 'tailwindcss';
-/* @import 'tailwindcss/preflight'; */
-/* @tailwind base;
-@tailwind components; */
 @tailwind utilities;
 
 @layer base {
   :root {
-    --color-primary: #0de050;
-    --color-bg: #9ec5e2;
-    --color-text: #000000;
+    --color-primary: #10b981;
+    --color-bg: #f8fafc;
+    --color-text: #1e293b;
   }
 
   .dark {
-    --color-primary: #2acb2c;
-    --color-bg: #05212f;
-    --color-text: #ffffff;
+    --color-primary: #34d399;
+    --color-bg: #0f172a;
+    --color-text: #f1f5f9;
   }
 
   body {
-    @apply bg-[var(--color-bg)] text-[var(--color-text)];
+    @apply bg-[var(--color-bg)] text-[var(--color-text)] transition-colors duration-300;
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+      'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 }
 
 @layer components {
   .btn {
-    @apply px-4 py-2 rounded font-semibold;
+    @apply px-6 py-3 rounded-2xl font-semibold transition-all duration-300;
   }
 
   .btn-primary {
-    @apply bg-[var(--color-primary)] text-white;
+    @apply bg-[var(--color-primary)] text-white hover:opacity-90 active:scale-95 shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-white/80 dark:bg-black/20 backdrop-blur-md border border-white/20 dark:border-white/10 text-[var(--color-text)] hover:bg-white/90 dark:hover:bg-black/30;
+  }
+
+  .glass-card {
+    @apply bg-white/70 dark:bg-black/20 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-white/10 shadow-xl;
+  }
+
+  .glass-card-light {
+    @apply bg-white/80 backdrop-blur-md rounded-2xl border border-white/30 shadow-lg;
+  }
+
+  .section-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-[var(--color-primary)] to-green-600 bg-clip-text text-transparent;
   }
 }

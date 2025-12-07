@@ -6,7 +6,8 @@ import { getMessages } from 'next-intl/server';
 import { Metadata } from 'next';
 import '../globals.css';
 import { ReactNode } from 'react';
-import Navbar from '@/components/layout/Navbar';
+import Navbar from '@/components/layout/navbar/Navbar';
+import Footer from '@/components/layout/footer/Footer';
 
 export const metadata: Metadata = {
   title: 'Nagham ElGreeny',
@@ -34,10 +35,11 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
 
   return (
     <html className={themeMode} lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-      <body className="flex flex-col">
+      <body className="flex flex-col min-h-screen">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          {children}
+          <main className="flex-1">{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -1,4 +1,3 @@
-// app/not-found.tsx (Server Component)
 import Link from 'next/link';
 import Head from 'next/head';
 import { cookies } from 'next/headers';

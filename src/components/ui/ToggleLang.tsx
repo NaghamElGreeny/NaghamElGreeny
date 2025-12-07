@@ -22,7 +22,13 @@ function ToggleLang() {
       onClick={setLanguage}
       className="text-gray-600 text-md font-semibold flex cursor-pointer flex-row items-center gap-1  w-fit "
     >
-      <Image src="/assets/globe.svg" alt="Language icon" width={24} height={24} />
+      <Image
+        src="/assets/globe.svg"
+        alt="Language icon"
+        width={24}
+        height={24}
+        className="size-5 md:size-6"
+      />
       {locale === 'en' ? 'ع' : 'EN'}
     </button>
   );
