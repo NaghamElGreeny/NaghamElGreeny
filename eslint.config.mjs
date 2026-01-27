@@ -8,9 +8,9 @@ const __dirname = dirname(__filename);
 const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
-export default{
-  ignorePatterns: ['.next/**', 'chunks/**', 'server/chunks/**']
-}
+export default[
+  {ignores: ['.next/**', 'chunks/**', 'server/chunks/**']},
+]
 const eslintConfig = [...compat.extends('next/core-web-vitals', 'next/typescript')];
 
 
