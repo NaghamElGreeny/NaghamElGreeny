@@ -44,7 +44,7 @@ export const AnimatedSection = ({
       ref={ref}
       initial="hidden"
       animate={isInView ? 'visible' : 'hidden'}
-      variants={variants}
+      // variants={variants}
       className={className}
     >
       {children}
