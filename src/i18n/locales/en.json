@@ -17,9 +17,13 @@
     "profile": "profile"
   },
   "Hero": {
+    "greeting": "Hi! I'm Nagham ElGreeny",
     "title": "Front-End Developer",
     "subtitle": "Creating clean, modern, and user-focused web interfaces",
     "tagline": "Transforming ideas into interactive designs",
+    "description": "Transforming ideas into interactive designs",
+    "hireMe": "Hire Me",
+    "downloadCV": "Download CV",
     "ctaProjects": "View Projects",
     "ctaContact": "Get In Touch",
     "scrollDown": "Scroll to explore"
@@ -70,7 +74,46 @@
     "viewAll": "View All Projects",
     "liveDemo": "Live Demo",
     "viewCode": "View Code",
-    "techStack": "Tech Stack"
+    "backToProjects": "Back to Projects",
+    "techStack": {
+      "title": "Tech Stack",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "styling": "Styling",
+      "tools": "Tools & Libraries",
+      "other": "Other"
+    },
+    "breadcrumb": {
+      "home": "Home"
+    },
+    "categories": {
+      "web": "Web Application",
+      "dashboard": "Dashboard",
+      "saas": "SaaS Platform",
+      "pos": "POS System"
+    },
+    "highlights": "Highlights",
+    "featured": "Featured",
+    "projectStructure": "Project Structure",
+    "keyFeatures": "Key Features",
+    "projectCount": {
+      "singular": "project",
+      "plural": "projects",
+      "total": "total"
+    },
+    "iframe": {
+      "loading": "Loading...",
+      "error": "Error loading",
+      "errorMessage": "Unable to load the project. Some websites block embedding in iframes.",
+      "refresh": "Refresh",
+      "fullscreen": "Fullscreen",
+      "exitFullscreen": "Exit Fullscreen",
+      "openInNewTab": "Open in New Tab"
+    },
+    "notFound": {
+      "title": "Project Not Found",
+      "description": "The project you're looking for doesn't exist."
+    }
   },
   "Contact": {
     "title": "Get In Touch",

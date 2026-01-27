@@ -18,7 +18,12 @@ export default function ProjectsPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[var(--color-text)]">
               {t('title')}
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-400">{t('subtitle')}</p>
+            <p className="text-xl text-gray-600 dark:text-gray-400 mb-2">{t('subtitle')}</p>
+            <p className="text-sm text-gray-500 dark:text-gray-500">
+              {PROJECTS.length}{' '}
+              {PROJECTS.length === 1 ? t('projectCount.singular') : t('projectCount.plural')}{' '}
+              {t('projectCount.total')}
+            </p>
           </div>
         </AnimatedSection>
 

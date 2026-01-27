@@ -55,3 +55,212 @@
     @apply bg-gradient-to-r from-[var(--color-primary)] to-green-600 bg-clip-text text-transparent;
   }
 }
+
+@layer utilities {
+  @keyframes breathing-glow {
+    0%,
+    100% {
+      opacity: 0.4;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%,
+    100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+  }
+
+  @keyframes ring-pulse {
+    0%,
+    100% {
+      opacity: 0.5;
+      stroke-width: 1.5;
+    }
+    50% {
+      opacity: 0.8;
+      stroke-width: 2;
+    }
+  }
+
+  @keyframes icon-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-breathing-glow {
+    animation: breathing-glow 3s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 5s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 0.5s;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  .animate-icon-pulse {
+    animation: icon-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes orbit-inner {
+    from {
+      transform: rotate(var(--initial-angle, 0deg)) translateX(var(--radius, 0px));
+    }
+    to {
+      transform: rotate(calc(var(--initial-angle, 0deg) + 360deg)) translateX(var(--radius, 0px));
+    }
+  }
+
+  @keyframes orbit-middle {
+    from {
+      transform: rotate(var(--initial-angle, 0deg)) translateX(var(--radius, 0px));
+    }
+    to {
+      transform: rotate(calc(var(--initial-angle, 0deg) + 360deg)) translateX(var(--radius, 0px));
+    }
+  }
+
+  @keyframes orbit-outer {
+    from {
+      transform: rotate(var(--initial-angle, 0deg)) translateX(var(--radius, 0px));
+    }
+    to {
+      transform: rotate(calc(var(--initial-angle, 0deg) + 360deg)) translateX(var(--radius, 0px));
+    }
+  }
+
+  @keyframes counter-rotate-inner {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes counter-rotate-middle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes counter-rotate-outer {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes marquee-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes marquee-scroll-rtl {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(50%);
+    }
+  }
+
+  .orbit-inner {
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: orbit-inner 20s linear infinite;
+  }
+
+  .orbit-middle {
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: orbit-middle 30s linear infinite;
+  }
+
+  .orbit-outer {
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
+    animation: orbit-outer 40s linear infinite;
+  }
+
+  .counter-rotate-inner {
+    animation: counter-rotate-inner 20s linear infinite;
+  }
+
+  .counter-rotate-middle {
+    animation: counter-rotate-middle 30s linear infinite;
+  }
+
+  .counter-rotate-outer {
+    animation: counter-rotate-outer 40s linear infinite;
+  }
+
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .marquee-content {
+    display: inline-flex;
+    align-items: center;
+    animation: marquee-scroll 20s linear infinite;
+    will-change: transform;
+  }
+
+  .marquee-content-rtl {
+    display: inline-flex;
+    align-items: center;
+    animation: marquee-scroll-rtl 20s linear infinite;
+    will-change: transform;
+  }
+
+  .marquee-content:hover,
+  .marquee-content-rtl:hover {
+    animation-play-state: paused;
+  }
+}
